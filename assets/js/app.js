@@ -1,12 +1,9 @@
-var imgObj = null;
-            
-function init() {
-   imgObj = document.getElementById('arrow');
-   imgObj.style.position= 'relative'; 
-   imgObj.style.left = '0px'; 
-}
 function moveRight() {
-   imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    const left = $('#arrow').css('left');
+    $('#arrow').css({ left: `${parseInt(left) + 10}px` })
 }
 
-window.onload = init;
+$('document').ready(function() {
+    $('#arrow').css({ position: 'relative', left: '0px' });
+    $('#go-to-top').scrollTop(0);
+ });
