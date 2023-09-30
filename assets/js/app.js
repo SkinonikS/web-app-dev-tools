@@ -4,6 +4,19 @@ function moveRight() {
 }
 
 $('document').ready(function() {
+    // arrow
     $('#arrow').css({ position: 'relative', left: '0px' });
-    $('#go-to-top').scrollTop(0);
+
+    // go to top
+    $('#go-to-top').click(function () {
+        $("html, body").animate({ scrollTop: "0px" });
+    });
+
+    // slide
+    $('h2').css('cursor', 'pointer');
+    $('h2').click(function () {
+        $(this).nextUntil('h2').slideToggle();
+    });
+
+    $('body').fadeIn(1250);
  });

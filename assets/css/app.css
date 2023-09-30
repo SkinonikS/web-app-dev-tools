@@ -114,4 +114,10 @@ body {
     position: fixed;
     bottom: 12px;
     right: 12px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000 !important;
 }
