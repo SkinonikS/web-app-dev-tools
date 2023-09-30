@@ -28,7 +28,7 @@
     <body>
         <div class="page">
             <div class="page-container">
-                <div class="article">
+                <div class="card">
                     <div class="fs-italic fz-12px ta-center">This is TSI University task for HTML, CSS and SASS workshop, not for publishing anywhere on the media. </div>
                     <h1 class="fz-28px mt-12px mb-6px ta-center">What is Sass? Your guide to this top CSS preprocessor</h1>
                     <br>
@@ -182,17 +182,24 @@ body {
                             <input class="subscribe-input" type="text" name="email" placeholder="Email">
                             <input class="subscribe-button" type="submit" value="Subscribe">
                         </form>
+                    </div>
+                </div>
+                <div class="card mt-24px">
+                    <img id="arrow" src ="assets/images/arrow.jpeg" />
+                    <p class="ln-15 fz-16px">Click button below to move the image to right</p>
+                    <input class="subscribe-button" type="button" value="Click Me" onclick="moveRight();" />
+                </div>
             </div>
         </div>
-        <script src="js/scripts.js"></script>
+        <script src="assets/js/app.js"></script>
         <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
         <script>
-          const socket = io();
-      
-          socket.on('reload', () => {
-            console.log('Reloading page...');
-            window.location.reload();
-          });
+            const socket = io();
+        
+            socket.on('reload', () => {
+                console.log('Reloading page...');
+                window.location.reload();
+            });
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
