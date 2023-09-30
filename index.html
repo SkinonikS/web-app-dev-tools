@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
     </head>
 
-    <body>
+    <body style="display: none;">
         <div class="page">
             <div class="page-container">
                 <div class="card">
@@ -190,8 +190,8 @@ body {
                     <input class="subscribe-button" type="button" value="Click Me" onclick="moveRight();" />
                 </div>
             </div>
+            <a class="fab"  href="#" id="go-to-top">Вверх</a>
         </div>
-        <script src="assets/js/app.js"></script>
         <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
         <script>
             const socket = io();
@@ -205,6 +205,8 @@ body {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scss.min.js"></script>
         <script>hljs.highlightAll();</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>
 
