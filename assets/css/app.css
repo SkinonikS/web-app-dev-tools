@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto' !important;
+}
+
+.page {
+    display: block;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.75);
+}
+
+.mt-12px {
+    margin-top: 12px;
+}
+
+.mb-6px {
+    margin-bottom: 6px;
+}
+
+.mt-24px {
+    margin-top: 24px;
+}
+
+.fz-28px {
+    font-size: 28px;
+}
+
+.fz-16px {
+    font-size: 16px;
+}
+
+.fz-18px {
+    font-size: 18px;
+}
+
+.fz-12px {
+    font-size: 12px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+.lh-15 {
+    line-height: 1.5;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.subscribe-button,
+.subscribe-input {
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.45;
+    outline: none;
+    padding: 0.6em 1.45em 0.7em;
+    transition: .18s ease-out;
+}
+
+.subscribe-button {
+    background: #ff0000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #3f3f3f;
+    color: #fff;
+}
+
+.subscribe-input {
+    background: #fff;
+    color: #000;
+}
+
+.subscribe-input:hover {
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.subscribe-input:focus {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
