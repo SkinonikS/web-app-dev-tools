@@ -11,65 +11,78 @@ body {
     padding: 24px;
 }
 
+.page-container > .card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
 .card {
     position: relative;
     overflow: hidden;
     background-color: #fff;
     padding: 24px;
     border-radius: 6px;
-    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, .75);
 }
 
-.mt-12px {
-    margin-top: 12px;
-}
-
-.mb-6px {
-    margin-bottom: 6px;
-}
-
-.mt-24px {
-    margin-top: 24px;
-}
-
-.fz-28px {
+.article__title {
+    text-align: center;
     font-size: 28px;
+    margin: 0;
+    margin-bottom: 24px;
 }
 
-.fz-16px {
+.article__section:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.article__section__content > ul,
+.article__section__content > p {
+    line-height: 1.5;
     font-size: 16px;
 }
 
-.fz-18px {
-    font-size: 18px;
+.article__section__content > p {
+    margin: 0;
 }
 
-.fz-12px {
-    font-size: 12px;
+.article__section__content > p:not(:last-child) {
+    margin-bottom: 12px;
 }
 
-.fw-500 {
-    font-weight: 500;
-}
-
-.fw-bold {
+.article__section__title {
     font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 12px;
 }
 
-.fs-italic {
+.article__disclaimer {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.article__author {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.font-style-italic {
     font-style: italic;
 }
 
-.lh-15 {
-    line-height: 1.5;
+.font-weight-500 {
+    font-weight: 500;
 }
 
-.ta-center {
-    text-align: center;
+.font-size-24px {
+    font-size: 24px;
 }
 
-.subscribe-button,
-.subscribe-input {
+.button,
+.input {
     border-radius: 4px;
     border: 1px solid #d1d1d1;
     box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
@@ -81,7 +94,7 @@ body {
     transition: .18s ease-out;
 }
 
-.subscribe-button {
+.button {
     background: #ff0000;
     color: #fff;
     text-transform: uppercase;
@@ -89,21 +102,21 @@ body {
     cursor: pointer;
 }
 
-.subscribe-button:hover {
+.button:hover {
     background-color: #3f3f3f;
     color: #fff;
 }
 
-.subscribe-input {
+.input {
     background: #fff;
     color: #000;
 }
 
-.subscribe-input:hover {
+.input:hover {
     box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
 }
 
-.subscribe-input:focus {
+.input:focus {
     background-color: #000;
     color: #fff;
     border: 1px solid #B8B6B6;
