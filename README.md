@@ -1,2 +1,4 @@
-# web-app-dev-tools
-web-app-dev-tools
+# Web App Dev Tools
+Web application development tools task.
+
+To see result open ```index.html``` from the root directory.
